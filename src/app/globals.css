@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --secondary: #74B117;
+  --secondary-100: #5CD425;
+  --primary: #251804;
+  --primary-100: #5CD425;
+  --dark: #333333;
+  --dark-100: #232233;
+  --dark-200: #6C6C72;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-100: var(--primary-100);
+  --color-secondary: var(--secondary);
+  --color-secondary-100: var(--secondary-100);
+  --color-secondary-100: var(--secondary-100);
+  --color-dark: var(--dark);
+  --color-dark-100: var(--dark-100);
+  --color-dark-200: var(--dark-200);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+
+
+@layer components {
+  /* Container Style  */
+  .margins {
+    @apply m-[auto] px-[15px] md:px-[70px] lg:px-[80px] xl:px-[120px] w-full lg:max-w-[1440px];
+  }
+
+  .margins_large {
+    @apply m-[auto] px-[0px] md:px-[70px] lg:px-[80px] xl:px-[120px] w-full lg:max-w-[1440px];
+  }
+
+  .margin_one {
+    @apply m-[auto] lg:px-[80px] pr-[20px] lg:pr-0 pl-[20px] md:pl-[70px] xl:pl-[120px] w-full lg:max-w-[1440px];
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
