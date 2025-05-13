@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React from 'react';
 import playstore from "../../assets/playstore.svg";
 import appstore from "../../assets/appstore.svg";
 import logo from "../../assets/logo.svg";
@@ -10,7 +9,7 @@ const HeroSection = () => {
             <section className="flex justify-center items-center bg-white px-4 min-h-screen margins">
                   <div className="relative items-center gap-12 grid md:grid-cols-2 w-full">
                         {/* Left Side - Text */}
-                        <div className="relative bg-white shadow-md ml-28 p-6 border-[12px] border-secondary min-h-[460px]">
+                        <div className="relative bg-white shadow-md ml-28 p-6 border-[18px] border-secondary min-h-[460px]">
                               <div className="-left-18 absolute bg-white mr-8 px-6 py-8 border border-secondary">
                                     <h2 className="mb-8 font-bold text-primary leading-snug"
 
