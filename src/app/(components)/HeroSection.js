@@ -56,7 +56,7 @@ const HeroSection = () => {
 
                         {/* Right Side - Ifá Kíkọ Box */}
                         <div className="relative flex justify-center items-center w-full h-full">
-                              <div className="absolute bg-primary-100 rounded-[50px] w-48 h-full"
+                              <div className="absolute bg-secondary-100 rounded-[50px] w-48 h-full"
                                     style={{
                                           boxShadow: '0px 70px 100px 0px #00000040'
                                     }}

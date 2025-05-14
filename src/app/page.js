@@ -1,4 +1,4 @@
-import { About, DownloadApp, Features, Footer, HeroList, HeroSection, HowToUse, JoinAsPriest, MoreAbout, WorkingProcess, Navbar } from "./(components)";
+import { About, DownloadApp, Features, Footer, HeroList, HeroSection, HowToUse, JoinAsPriest, Principles, WorkingProcess, Navbar } from "./(components)";
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <HeroSection />
       <HeroList />
       <About />
-      <MoreAbout />
+      <Principles />
       <Features />
       <JoinAsPriest />
       <HowToUse />

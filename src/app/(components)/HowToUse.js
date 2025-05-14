@@ -1,55 +1,95 @@
-import { FaUserPlus, FaLock, FaCreditCard } from "react-icons/fa";
+import Image from "next/image";
+import account from "../../assets/account.png";
+import account1 from "../../assets/account1.png";
+import info from "../../assets/info.png";
+import payment from "../../assets/payment.png";
+import payment1 from "../../assets/payment1.png";
 
 const HowToUse = () => {
       return (
-            <section className="bg-[#1D140B] py-16 text-white margins">
-                  <div className="mb-12 text-center">
-                        <h2 className="font-bold text-2xl md:text-3xl">HOW TO USE THE APP PERFECTLY</h2>
-                        <p className="mx-auto mt-4 max-w-xl text-[#D1CBC5] text-sm md:text-base">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.
-                        </p>
-                  </div>
+            <section className="bg-primary py-20 text-white">
+                  <div className="margins">
 
-                  <div className="flex md:flex-row flex-col justify-between items-center gap-10">
-                        {/* Step 1 */}
-                        <div className="flex flex-col items-center max-w-xs text-center">
-                              <div className="relative mb-6">
-                                    <div className="flex justify-center items-center bg-white shadow-md rounded-xl w-24 h-20">
-                                          <FaUserPlus className="text-lime-500 text-3xl" />
-                                    </div>
-                                    <div className="bg-lime-500 mx-auto mt-2 rounded-md w-28 h-10"></div>
-                              </div>
-                              <h3 className="mb-2 font-semibold text-lg">Create Account</h3>
-                              <p className="text-[#D1CBC5] text-sm">
-                                    Enter your information<br />ensure your details<br />safe and more secure
+                        <div className="mb-12 text-center">
+                              <h2 className="font-bold text-2xl md:text-3xl">HOW TO USE THE APP PERFECTLY</h2>
+                              <p className="mx-auto mt-6 max-w-xl font-normal text-white text-sm md:text-base">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.
                               </p>
                         </div>
 
-                        {/* Step 2 */}
-                        <div className="flex flex-col items-center max-w-xs text-center">
-                              <div className="relative mb-6">
-                                    <div className="flex justify-center items-center bg-white shadow-md rounded-xl w-24 h-20">
-                                          <FaLock className="text-lime-500 text-3xl" />
+                        <div className="flex md:flex-row flex-col justify-between items-center gap-10">
+                              {/* Step 1 */}
+                              <div className="flex flex-col justify-between items-center w-2/3 h-98 text-center">
+                                    <div className="relative mb-8 h-48">
+                                          <div className="w-48">
+                                                <Image
+                                                      src={account}
+                                                      alt="Account"
+                                                      width={100}
+                                                      height={100}
+                                                      className='w-full object-cover'
+                                                />
+                                          </div>
+                                          <div className="w-48">
+                                                <Image
+                                                      src={account1}
+                                                      alt="Account"
+                                                      width={100}
+                                                      height={100}
+                                                      className='w-full object-cover'
+                                                />
+                                          </div>
                                     </div>
+                                    <h3 className="mb-2 font-medium text-2xl">Create Account</h3>
+                                    <p className="w-full md:w-2/3 font-normal text-white text-sm">
+                                          Enter your information ensure your details safe and more secure
+                                    </p>
                               </div>
-                              <h3 className="mb-2 font-semibold text-lg">Enter Information</h3>
-                              <p className="text-[#D1CBC5] text-sm">
-                                    Sending money faster &<br />easier with end to end<br />encryption.
-                              </p>
-                        </div>
 
-                        {/* Step 3 */}
-                        <div className="flex flex-col items-center max-w-xs text-center">
-                              <div className="relative mb-6">
-                                    <div className="flex justify-center items-center bg-white shadow-md rounded-xl w-24 h-20">
-                                          <FaCreditCard className="text-lime-500 text-3xl" />
+                              {/* Step 2 */}
+                              <div className="flex flex-col justify-between items-center w-2/3 h-98 text-center">
+                                    <div className="relative mb-6">
+                                          <div className="w-48 h-48">
+                                                <Image
+                                                      src={info}
+                                                      alt="Info"
+                                                      width={200}
+                                                      height={200}
+                                                      className='h-48 object-contain'
+                                                />
+                                          </div>
                                     </div>
-                                    <div className="bg-lime-500 mx-auto mt-2 rounded-md w-28 h-10"></div>
+                                    <h3 className="mb-2 font-medium text-2xl">Enter Information</h3>
+                                    <p className="w-full md:w-2/3 font-normal text-white text-sm">
+                                          Sending money faster & easier with end to end encryption.
+                                    </p>
                               </div>
-                              <h3 className="mb-2 font-semibold text-lg">Add Payment</h3>
-                              <p className="text-[#D1CBC5] text-sm">
-                                    Add multiple cards and<br />track your daily expense<br />with quality interface
-                              </p>
+
+                              {/* Step 3 */}
+                              <div className="flex flex-col justify-between items-center w-2/3 h-98 text-center">
+                                    <div className="relative mb-6 w-48 h-48">
+                                          <Image
+                                                src={payment}
+                                                alt="Payment"
+                                                width={100}
+                                                height={100}
+                                                className='w-48 h-48 object-contain'
+                                          />
+                                          <div className="top-1/2 -left-1 absolute">
+                                                <Image
+                                                      src={payment1}
+                                                      alt="Payment"
+                                                      width={100}
+                                                      height={100}
+                                                      className='w-20 object-contain'
+                                                />
+                                          </div>
+                                    </div>
+                                    <h3 className="mb-2 font-medium text-2xl">Add Payment</h3>
+                                    <p className="w-full md:w-2/3 font-normal text-white text-sm">
+                                          Add multiple cards and track your daily expense with quality interface
+                                    </p>
+                              </div>
                         </div>
                   </div>
             </section>

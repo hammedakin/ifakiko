@@ -6,7 +6,7 @@ import HeroList from "./HeroList";
 import HeroSection from "./HeroSection";
 import HowToUse from "./HowToUse";
 import JoinAsPriest from "./JoinAsPriest";
-import MoreAbout from "./MoreAbout";
+import Principles from "./Principles";
 import Navbar from "./Navbar";
 import WorkingProcess from "./WorkingProcess";
 export {
@@ -15,7 +15,7 @@ export {
       HeroSection,
       HeroList,
       About,
-      MoreAbout,
+      Principles,
       Features,
       JoinAsPriest,
       HowToUse,
