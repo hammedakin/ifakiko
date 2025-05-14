@@ -56,7 +56,7 @@ const WorkingProcess = () => {
 
 
       return (
-            <section className="bg-white py-16 margins">
+            <section className="bg-white py-16 font-space-grotesk margins">
 
                   <div className="mb-12">
                         <div className="flex md:flex-row flex-col gap-5">

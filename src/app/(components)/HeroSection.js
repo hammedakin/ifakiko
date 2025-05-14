@@ -6,7 +6,7 @@ import logo from "../../assets/logo.svg";
 const HeroSection = () => {
       return (
 
-            <section className="flex justify-center items-center bg-white px-4 min-h-screen margins">
+            <section className="flex justify-center items-center bg-white px-4 min-h-screen font-josefin-sans margins">
                   <div className="relative items-center gap-12 grid md:grid-cols-2 w-full">
                         {/* Left Side - Text */}
                         <div className="relative bg-white shadow-md ml-28 p-6 border-[18px] border-secondary min-h-[460px]">
@@ -15,7 +15,7 @@ const HeroSection = () => {
 
                                           style={{
                                                 fontSize: 'clamp(18px, 2vw, 30px)',
-                                                WebkitTextStroke: '1px var(--color-secondary)'
+                                                WebkitTextStroke: '0.5px var(--color-secondary)'
                                           }}
                                     >
                                           JOIN THOUSANDS LEARNING IFÁ THROUGH ANCESTRAL VOICE
@@ -28,7 +28,7 @@ const HeroSection = () => {
                                     <h2 className="mb-4 font-semibold text-primary leading-snug"
                                           style={{
                                                 fontSize: 'clamp(14px, 2vw, 25px)',
-                                                WebkitTextStroke: '1px var(--color-secondary)'
+                                                WebkitTextStroke: '0.5px var(--color-secondary)'
                                           }}
                                     >
                                           DOWNLOAD APP NOW

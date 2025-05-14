@@ -6,7 +6,7 @@ import { RiInstagramFill, RiSendPlane2Fill } from "react-icons/ri";
 
 const Footer = () => {
       return (
-            <footer className="bg-primary py-10 text-white text-sm">
+            <footer className="bg-primary py-10 font-josefin-sans text-white text-sm">
                   <div className="margins">
                         <div className="flex md:flex-row flex-col justify-between gap-10">
                               {/* Left Column */}

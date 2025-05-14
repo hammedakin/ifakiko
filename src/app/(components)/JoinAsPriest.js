@@ -4,7 +4,7 @@ import shapes from "../../assets/shapes.svg";
 
 const JoinAsPriest = () => {
       return (
-            <section className="bg-white py-20 margins">
+            <section className="bg-white py-20 font-space-grotesk margins">
 
                   <div className="flex md:flex-row flex-col justify-between items-center gap-12">
                         <div className="w-full md:w-2/5">

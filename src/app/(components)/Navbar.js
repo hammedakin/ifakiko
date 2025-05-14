@@ -5,7 +5,7 @@ import logo from "../../assets/logo.svg";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
-
+import { FaCaretDown, FaChevronDown, FaGlobeAmericas } from "react-icons/fa";
 const Navbar = () => {
 
       const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = () => {
       return (
             <>
                   {/* Navigation */}
-                  <header className="flex justify-between items-center mx-auto px-4 py-6 pt-14 margins">
+                  <header className="flex justify-between items-center mx-auto px-4 py-6 pt-14 font-lato margins">
                         <div className="">
                               <Link href="/">
                                     <Image
@@ -49,16 +49,37 @@ const Navbar = () => {
 
                         {/* Desktop CTA Button */}
                         <div className="hidden md:block">
-                              <button
-                                    className="bg-white px-8 py-2 font-semibold text-dark text-sm"
-                              >
-                                    Login
-                              </button>
-                              <button
-                                    className="bg-white px-8 py-2 border-2 border-secondary rounded-xl font-semibold text-secondary text-sm"
-                              >
-                                    Sign up
-                              </button>
+                              <div className="flex gap-5">
+
+                                    <button
+                                          className="bg-white px-8 py-2 font-bold text-dark text-sm"
+                                    >
+                                          Login
+                                    </button>
+                                    <button
+                                          className="bg-white px-8 py-2 rounded-xl font-bold text-secondary text-sm"
+                                          style={{
+                                                border: '2px solid',
+                                                borderImageSource: 'linear-gradient(135deg, #74B117 13.54%, #333333 100%)',
+                                                borderImageSlice: 1,
+                                                borderRadius: '12px !important',
+                                          }}
+                                    >
+                                          Sign up
+                                    </button>
+                                    <button
+                                          className="flex items-center gap-2 bg-white px-3 py-2 rounded-xl font-bold text-secondary text-sm"
+                                          style={{
+                                                border: '2px solid',
+                                                borderImageSource: 'linear-gradient(135deg, #74B117 13.54%, #333333 100%)',
+                                                borderImageSlice: 1,
+                                                borderRadius: '12px !important',
+                                          }}
+                                    >
+                                          <FaGlobeAmericas /> En <FaChevronDown />
+                                    </button>
+                              </div>
+
                         </div>
 
 

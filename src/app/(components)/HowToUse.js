@@ -10,14 +10,14 @@ const HowToUse = () => {
             <section className="bg-primary py-20 text-white">
                   <div className="margins">
 
-                        <div className="mb-12 text-center">
+                        <div className="mb-12 font-josefin-sans text-center">
                               <h2 className="font-bold text-2xl md:text-3xl">HOW TO USE THE APP PERFECTLY</h2>
                               <p className="mx-auto mt-6 max-w-xl font-normal text-white text-sm md:text-base">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.
                               </p>
                         </div>
 
-                        <div className="flex md:flex-row flex-col justify-between items-center gap-10">
+                        <div className="flex md:flex-row flex-col justify-between items-center gap-10 font-poppins">
                               {/* Step 1 */}
                               <div className="flex flex-col justify-between items-center w-2/3 h-98 text-center">
                                     <div className="relative mb-8 h-48">

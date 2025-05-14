@@ -4,7 +4,7 @@ const Principles = () => {
 
       const principles = [
             {
-                  title: "🧘🏽‍♂️ RESPECT FOR LINEAGE",
+                  title: "🧙🏾‍♂ RESPECT FOR LINEAGE",
                   description:
                         "IFA Kiko was co-created with input from traditional priests, lineage heads, and spiritual leaders—not just tech experts. Every *verse*, feature, and function is spiritually validated before implementation.",
             },
@@ -22,7 +22,7 @@ const Principles = () => {
 
       return (
 
-            <section className="bg-white px-6 md:px-16 py-20">
+            <section className="bg-white px-6 md:px-16 py-20 font-josefin-sans">
                   <div className="relative space-y-16 mx-auto max-w-7xl">
                         {principles.map((item, index) => {
                               const isCenter = index === principles.length - 1;
@@ -43,7 +43,7 @@ const Principles = () => {
                                                             <h4 className="mb-1 font-semibold text-[#0A0A26] text-base">
                                                                   {item.title}
                                                             </h4>
-                                                            <p className="text-gray-700 text-sm leading-relaxed">
+                                                            <p className="font-normal text-gray-700 text-sm leading-relaxed">
                                                                   {item.description}
                                                             </p>
                                                       </div>

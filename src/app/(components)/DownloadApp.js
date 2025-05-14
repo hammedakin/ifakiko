@@ -4,7 +4,7 @@ import playstore from "../../assets/playstore.svg";
 import appstore from "../../assets/appstore.svg";
 const DownloadApp = () => {
       return (
-            <section className="flex md:flex-row flex-col justify-between items-center gap-10 bg-white px-6 md:px-20 py-16">
+            <section className="flex md:flex-row flex-col justify-between items-center gap-10 bg-white px-6 md:px-20 py-16 font-josefin-sans">
                   <div className="max-w-xl">
                         <h2 className="mb-4 font-semibold text-[30px] text-primary leading-snug"
                         >

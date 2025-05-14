@@ -3,7 +3,7 @@ import { FaHeadphones, FaMicrophone, FaStore, FaSitemap, FaUser, FaBook } from "
 
 const Features = () => {
       return (
-            <section className="bg-primary py-20 text-white">
+            <section className="bg-primary py-20 font-josefin-sans text-white">
                   <div className="margins">
                         <div className="mb-12 text-center">
                               <h2 className="font-bold text-2xl md:text-3xl">
@@ -12,15 +12,15 @@ const Features = () => {
                         </div>
 
                         <div className="flex flex-col items-center gap-4 mx-auto mb-12 max-w-2xl text-center">
-                              <FaHeadphones className="text-white text-2xl" />
+                              <FaHeadphones className="text-2xl" />
                               <h2 className="font-semibold text-lg tracking-wide">AUDIO-VISUAL VERSE LEARNING</h2>
-                              <p className="text-white text-sm">
+                              <p className="font-normal text-sm">
                                     Engage with authentic Ifá verses through high-quality video and audio recordings<br className="hidden md:block" /> from verified Babaláwo (priests).
                               </p>
                         </div>
 
 
-                        <div className="relative gap-x-4 gap-y-10 grid grid-cols-1 md:grid-cols-3 mx-auto w-full max-w-6xl">
+                        <div className="relative gap-x-0 gap-y-10 grid grid-cols-1 md:grid-cols-3 mx-auto w-full max-w-6xl">
                               {/* Left column */}
                               <div className="flex flex-col items-center md:items-end gap-10 md:gap-48 text-center md:text-right">
 
@@ -45,7 +45,7 @@ const Features = () => {
                               <div className="hidden md:block">
 
                                     <div className="flex justify-center items-center">
-                                          <div className="bg-lime-500 rounded-3xl w-44 md:w-48 h-96 md:h-[540px] lg:h-[450px]"></div>
+                                          <div className="bg-secondary-100 rounded-3xl w-44 md:w-48 h-96 md:h-[540px] lg:h-[450px]"></div>
                                     </div>
 
                               </div>
@@ -76,13 +76,11 @@ const Features = () => {
                         </div>
 
                         {/* Bottom section */}
-                        <div className="mt-16 text-center">
-                              <p className="">
 
-                              </p>
+                        <div className="flex flex-col items-center gap-4 mx-auto mt-16 mb-10 max-w-2xl text-center">
                               <FaStore className="mx-auto mb-2 text-xl" />
-                              <h3 className="font-semibold text-lg">SECURE VERSE MARKETPLACE</h3>
-                              <p className="mx-auto max-w-sm text-white text-xs">
+                              <h2 className="font-semibold text-lg tracking-wide">SECURE VERSE MARKETPLACE</h2>
+                              <p className="font-normal text-sm">
                                     Buy access to exclusive verses, teachings, or ceremonial materials from verified content creators.
                               </p>
                         </div>
@@ -102,7 +100,7 @@ const Feature = ({ icon, title, text, position }) => {
                         {icon}
                   </p>
                   <h3 className="font-semibold text-lg">{title}</h3>
-                  <p className="text-white text-xs">
+                  <p className="font-normal text-sm">
                         {text}
                   </p>
             </div>

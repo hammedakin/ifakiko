@@ -7,8 +7,8 @@ const About = () => {
       return (
             <section className="relative gap-12 grid md:grid-cols-2 my-10 w-full margins">
                   <div className="mb-10 md:mb-0">
-                        <h2 className="mb-4 font-bold text-dark-100 text-2xl md:text-3xl tracking-widest">ABOUT Ifá Kiko</h2>
-                        <p className="mb-6 text-primary leading-relaxed">
+                        <h2 className="mb-4 font-noto-sans font-bold text-dark-100 text-2xl md:text-3xl tracking-widest">ABOUT Ifá Kiko</h2>
+                        <p className="mb-6 font-josefin-sans font-normal text-primary leading-relaxed">
                               IFA Kiko is a sacred digital space created to preserve and teach the oral traditions of Ifa and Orisa in an ethical, secure, and lineage-respectful manner. Rooted in Yoruba spirituality and guided by revered elders, the platform is not just an app–it is a spiritual mission.
                         </p>
                         <button className="bg-secondary hover:bg-lime-700 shadow-2xl py-3 pr-10 pl-6 rounded-xl rounded-tr-2xl font-semibold text-white leading-7 tracking-widest transition duration-300"
@@ -49,7 +49,7 @@ const About = () => {
                                     />
                               </div>
                               <div className="right-10 -bottom-10 absolute mr-4 mb-4">
-                                    <div className="bg-lime-600 shadow-lg px-4 py-2 rounded-xl font-normal text-white text-center">
+                                    <div className="bg-lime-600 shadow-lg px-4 py-2 rounded-xl font-noto-sans font-normal text-white text-center">
                                           <p className="md:text-3xl lg:text-6xl">
                                                 10+
                                           </p>
