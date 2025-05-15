@@ -19,7 +19,7 @@ const HowToUse = () => {
 
                         <div className="flex md:flex-row flex-col justify-between items-center gap-10 font-poppins">
                               {/* Step 1 */}
-                              <div className="flex flex-col justify-between items-center w-2/3 h-98 text-center">
+                              <div className="flex flex-col justify-between items-center w-2/3 h-full md:h-98 text-center">
                                     <div className="relative mb-8 h-48">
                                           <div className="w-48">
                                                 <Image
@@ -47,7 +47,7 @@ const HowToUse = () => {
                               </div>
 
                               {/* Step 2 */}
-                              <div className="flex flex-col justify-between items-center w-2/3 h-98 text-center">
+                              <div className="flex flex-col justify-between items-center w-2/3 h-full md:h-98 text-center">
                                     <div className="relative mb-6">
                                           <div className="w-48 h-48">
                                                 <Image
@@ -66,7 +66,7 @@ const HowToUse = () => {
                               </div>
 
                               {/* Step 3 */}
-                              <div className="flex flex-col justify-between items-center w-2/3 h-98 text-center">
+                              <div className="flex flex-col justify-between items-center w-2/3 h-full md:h-98 text-center">
                                     <div className="relative mb-6 w-48 h-48">
                                           <Image
                                                 src={payment}

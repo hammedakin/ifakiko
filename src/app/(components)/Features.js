@@ -95,7 +95,7 @@ export default Features;
 
 const Feature = ({ icon, title, text, position }) => {
       return (
-            <div className="max-w-xs">
+            <div className="md:max-w-xs max-w-2xl">
                   <p className={`flex justify-center text-2xl ${ position }`}>
                         {icon}
                   </p>

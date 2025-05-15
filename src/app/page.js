@@ -2,7 +2,7 @@ import { About, DownloadApp, Features, Footer, HeroList, HeroSection, HowToUse, 
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="max-w-screen min-h-screen overflow-hidden">
       <Navbar />
       <HeroSection />
       <HeroList />

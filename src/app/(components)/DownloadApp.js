@@ -34,21 +34,45 @@ const DownloadApp = () => {
                               </div>
                         </div>
 
-                        <div className="flex flex-wrap gap-4 text-center">
-                              <div className="flex flex-col items-center bg-secondary p-6 rounded-md w-[120px] text-white">
+                        <div className="flex gap-4 text-center">
+                              <div className="flex flex-col items-center bg-secondary p-6 rounded-md text-white">
                                     <FaDownload className="mb-2 text-2xl" />
-                                    <p className="font-bold text-lg">59865</p>
-                                    <p className="text-sm">DOWNLOAD</p>
+                                    <p className="font-bold text-lg"
+                                          style={{
+                                                fontSize: 'clamp(12px, 1vw, 18px)',
+                                          }}
+                                    >59865</p>
+                                    <p className="text-sm"
+                                          style={{
+                                                fontSize: 'clamp(10px, 1vw, 14px)',
+                                          }}
+                                    >DOWNLOAD</p>
                               </div>
-                              <div className="flex flex-col items-center bg-secondary p-6 rounded-md w-[120px] text-white">
+                              <div className="flex flex-col items-center bg-secondary p-6 rounded-md text-white">
                                     <FaThumbsUp className="mb-2 text-2xl" />
-                                    <p className="font-bold text-lg">29852</p>
-                                    <p className="text-sm">LIKE</p>
+                                    <p className="font-bold text-lg"
+                                          style={{
+                                                fontSize: 'clamp(14px, 1vw, 18px)',
+                                          }}
+                                    >29852</p>
+                                    <p className="text-sm"
+                                          style={{
+                                                fontSize: 'clamp(10px, 1vw, 14px)',
+                                          }}
+                                    >LIKE</p>
                               </div>
-                              <div className="flex flex-col items-center bg-secondary p-6 rounded-md w-[140px] text-white">
+                              <div className="flex flex-col items-center bg-secondary p-6 rounded-md text-white">
                                     <FaStar className="mb-2 text-2xl" />
-                                    <p className="font-bold text-lg">1500</p>
-                                    <p className="text-sm">5 STAR RATING</p>
+                                    <p className="font-bold text-lg"
+                                          style={{
+                                                fontSize: 'clamp(14px, 1vw, 18px)',
+                                          }}
+                                    >1500</p>
+                                    <p className="text-sm"
+                                          style={{
+                                                fontSize: 'clamp(10px, 1vw, 14px)',
+                                          }}
+                                    >5 STAR RATING</p>
                               </div>
                         </div>
                   </div>

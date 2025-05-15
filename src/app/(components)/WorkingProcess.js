@@ -60,7 +60,7 @@ const WorkingProcess = () => {
 
                   <div className="mb-12">
                         <div className="flex md:flex-row flex-col gap-5">
-                              <p className="bg-secondary-200 p-1 rounded-md font-medium text-4xl">
+                              <p className="bg-secondary-200 p-1 rounded-md w-fit font-medium text-4xl">
                                     Our Working Process
                               </p>
                               <p className="w-full md:w-1/3 font-normal text-sm">
@@ -79,13 +79,13 @@ const WorkingProcess = () => {
                                     >
                                           <div className="flex justify-between items-center cursor-pointer" onClick={() => toggleFAQ(index)}>
                                                 <div className="flex items-center gap-4">
-                                                      <span className="font-medium text-6xl">{faq.number}</span>
-                                                      <h3 className="max-w-md font-medium text-3xl leading-snug">
+                                                      <span className="font-medium text-3xl md:text-6xl">{faq.number}</span>
+                                                      <h3 className="max-w-md font-medium text-xl md:text-3xl leading-snug">
                                                             {faq.question}
                                                       </h3>
                                                 </div>
                                                 <hr className="my-6 border-black" />
-                                                <div className="flex justify-center items-center bg-white border rounded-full w-13 h-13 text-black text-2xl">
+                                                <div className="flex justify-center items-center bg-white border rounded-full min-w-13 h-13 text-black text-2xl">
                                                       {isActive ? <FaMinus /> : <FaPlus />}
                                                 </div>
                                           </div>

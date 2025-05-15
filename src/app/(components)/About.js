@@ -39,7 +39,7 @@ const About = () => {
                                     height={100}
                                     className='z-0 w-full object-cover'
                               />
-                              <div className="bottom-0 left-0 absolute md:w-28 lg:w-48 md:h-28 lg:h-48">
+                              <div className="bottom-0 left-0 absolute w-25 sm:w-40 md:w-28 lg:w-48 h-25 sm:h-40 md:h-28 lg:h-48">
                                     <Image
                                           src={opele}
                                           alt="Opele Ifa"
@@ -50,7 +50,7 @@ const About = () => {
                               </div>
                               <div className="right-10 -bottom-10 absolute mr-4 mb-4">
                                     <div className="bg-lime-600 shadow-lg px-4 py-2 rounded-xl font-noto-sans font-normal text-white text-center">
-                                          <p className="md:text-3xl lg:text-6xl">
+                                          <p className="text-3xl md:text-3xl lg:text-6xl">
                                                 10+
                                           </p>
                                           <p className="md:text-xl lg:text-3xl">
@@ -59,8 +59,6 @@ const About = () => {
                                     </div>
                               </div>
                         </div>
-
-
                   </div>
             </section>
       );

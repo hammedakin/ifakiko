@@ -121,6 +121,39 @@ const Navbar = () => {
                                                 )
                                           }
                                     </nav>
+                                    <div className="mt-10">
+                                          <div className="flex flex-wrap gap-5">
+
+                                                <button
+                                                      className="bg-white px-8 py-2 font-bold text-dark text-sm"
+                                                >
+                                                      Login
+                                                </button>
+                                                <button
+                                                      className="bg-white px-8 py-2 rounded-xl font-bold text-secondary text-sm"
+                                                      style={{
+                                                            border: '2px solid',
+                                                            borderImageSource: 'linear-gradient(135deg, #74B117 13.54%, #333333 100%)',
+                                                            borderImageSlice: 1,
+                                                            borderRadius: '12px !important',
+                                                      }}
+                                                >
+                                                      Sign up
+                                                </button>
+                                                <button
+                                                      className="flex items-center gap-2 bg-white px-3 py-2 rounded-xl font-bold text-secondary text-sm"
+                                                      style={{
+                                                            border: '2px solid',
+                                                            borderImageSource: 'linear-gradient(135deg, #74B117 13.54%, #333333 100%)',
+                                                            borderImageSlice: 1,
+                                                            borderRadius: '12px !important',
+                                                      }}
+                                                >
+                                                      <FaGlobeAmericas /> En <FaChevronDown />
+                                                </button>
+                                          </div>
+
+                                    </div>
                               </div>
                         </div>
                   )}
