@@ -3,15 +3,19 @@ import { FaHeadphones, FaMicrophone, FaStore, FaSitemap, FaUser, FaBook } from "
 
 const Features = () => {
       return (
-            <section className="bg-primary py-20 font-josefin-sans text-white">
+            <section className="bg-primary py-20 font-josefin-sans text-white" id='features'>
                   <div className="margins">
-                        <div className="mb-12 text-center">
+                        <div
+                              data-aos="zoom-in"
+                              className="mb-12 text-center">
                               <h2 className="font-bold text-2xl md:text-3xl">
                                     APP FEATURES
                               </h2>
                         </div>
 
-                        <div className="flex flex-col items-center gap-4 mx-auto mb-12 max-w-2xl text-center">
+                        <div
+                              data-aos="fade-left"
+                              className="flex flex-col items-center gap-4 mx-auto mb-12 max-w-2xl text-center">
                               <FaHeadphones className="text-2xl" />
                               <h2 className="font-semibold text-lg tracking-wide">AUDIO-VISUAL VERSE LEARNING</h2>
                               <p className="font-normal text-sm">
@@ -22,7 +26,9 @@ const Features = () => {
 
                         <div className="relative gap-x-0 gap-y-10 grid grid-cols-1 md:grid-cols-3 mx-auto w-full max-w-6xl">
                               {/* Left column */}
-                              <div className="flex flex-col items-center md:items-end gap-10 md:gap-48 text-center md:text-right">
+                              <div
+                                    data-aos="fade-right"
+                                    className="flex flex-col items-center md:items-end gap-10 md:gap-48 text-center md:text-right">
 
                                     <Feature
                                           icon={<FaBook className='mb-6' />}
@@ -44,13 +50,19 @@ const Features = () => {
                               {/* Center green rectangle */}
                               <div className="hidden md:block">
 
-                                    <div className="flex justify-center items-center">
+                                    <div
+                                          data-aos="flip-left"
+                                          data-aos-easing="ease-out-cubic"
+                                          data-aos-duration="1000"
+                                          className="flex justify-center items-center">
                                           <div className="bg-secondary-100 rounded-3xl w-44 md:w-48 h-96 md:h-[540px] lg:h-[450px]"></div>
                                     </div>
 
                               </div>
                               {/* Right column */}
-                              <div className="flex flex-col items-center md:items-start gap-10 md:gap-48 md:text-left text-center">
+                              <div
+                                    data-aos="fade-left"
+                                    className="flex flex-col items-center md:items-start gap-10 md:gap-48 md:text-left text-center">
                                     <div className="max-w-xs">
 
                                           <Feature
@@ -77,7 +89,9 @@ const Features = () => {
 
                         {/* Bottom section */}
 
-                        <div className="flex flex-col items-center gap-4 mx-auto mt-16 mb-10 max-w-2xl text-center">
+                        <div
+                              data-aos="fade-right"
+                              className="flex flex-col items-center gap-4 mx-auto mt-16 mb-10 max-w-2xl text-center">
                               <FaStore className="mx-auto mb-2 text-xl" />
                               <h2 className="font-semibold text-lg tracking-wide">SECURE VERSE MARKETPLACE</h2>
                               <p className="font-normal text-sm">

@@ -15,11 +15,13 @@ const HeroList = () => {
       ];
 
       return (
-            <section className="py-16 font-lato text-[#0D173B] text-xl text-center margins">
+            <section className="py-16 font-lato text-[#0D173B] text-xl text-center margins" id='verses'>
                   <div className="hidden lg:block">
 
                         <div className="flex">
-                              <div className="relative flex flex-col h-68">
+                              <div
+                                    data-aos="flip-right"
+                                    className="relative flex flex-col h-68">
 
                                     {tagLeft.map((tag, index) => (
                                           <div
@@ -30,7 +32,10 @@ const HeroList = () => {
                                           </div>
                                     ))}
                               </div>
-                              <div className="relative flex flex-col h-68">
+                              <div
+                                    data-aos="fade-left"
+                                    data-aos-delay='500'
+                                    className="relative flex flex-col h-68">
 
                                     {tagRight.map((tag, index) => (
                                           <div
@@ -46,7 +51,8 @@ const HeroList = () => {
 
 
                   <div className="lg:hidden block">
-                        <div className="flex flex-col items-center gap-6 w-full">
+                        <div
+                              className="flex flex-col items-center gap-6 w-full">
                               {[...tagLeft, ...tagRight]?.map((tag, index) => (
                                     <div
                                           key={index}

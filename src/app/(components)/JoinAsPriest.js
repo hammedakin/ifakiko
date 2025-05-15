@@ -7,7 +7,9 @@ const JoinAsPriest = () => {
             <section className="bg-white py-20 font-space-grotesk margins">
 
                   <div className="flex md:flex-row flex-col justify-between items-center gap-12">
-                        <div className="w-full md:w-2/5">
+                        <div
+                              data-aos="zoom-in-right"
+                              className="w-full md:w-2/5">
                               <h2 className="mb-4 font-medium text-[30px] text-primary leading-snug"
                               >
                                     Preserve, Learn, and Honor the Legacy of Ifa
@@ -21,7 +23,9 @@ const JoinAsPriest = () => {
                               </button>
 
                         </div>
-                        <div className="w-full md:w-2/5">
+                        <div
+                              data-aos="zoom-in"
+                              className="w-full md:w-2/5">
                               <div className="">
                                     <Image
                                           src={shapes}

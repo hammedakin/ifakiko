@@ -5,17 +5,18 @@ import logo from "../../assets/logo.svg";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
-import { FaCaretDown, FaChevronDown, FaGlobeAmericas } from "react-icons/fa";
+import { FaChevronDown, FaGlobeAmericas } from "react-icons/fa";
+
 const Navbar = () => {
 
       const [isMenuOpen, setIsMenuOpen] = useState(false);
       const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
       const navLink = [
-            { label: 'Home', href: '#' },
-            { label: 'About Ifá', href: '#' },
-            { label: 'Explore Verses', href: '#' },
-            { label: 'Features', href: '#' },
+            { label: 'Home', href: '/' },
+            { label: 'About Ifá', href: '/about' },
+            { label: 'Explore Verses', href: '#verses' },
+            { label: 'Features', href: '#features' },
             { label: 'Pricing', href: '#' },
       ];
       return (
@@ -112,17 +113,17 @@ const Navbar = () => {
                                     <nav className="flex flex-col gap-6 text-xl">
                                           {
                                                 navLink.map(({ label, href }, i) =>
-                                                      <a
+                                                      <Link
                                                             key={i}
                                                             href={href}
                                                             className="text-black hover:text-secondary" onClick={toggleMenu}>
                                                             {label}
-                                                      </a>
+                                                      </Link>
                                                 )
                                           }
                                     </nav>
                                     <div className="mt-10">
-                                          <div className="flex flex-wrap gap-5">
+                                          <div className="flex flex-wrap justify-center gap-5">
 
                                                 <button
                                                       className="bg-white px-8 py-2 font-bold text-dark text-sm"

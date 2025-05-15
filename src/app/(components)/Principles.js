@@ -5,16 +5,19 @@ const Principles = () => {
       const principles = [
             {
                   title: "🧙🏾‍♂ RESPECT FOR LINEAGE",
+                  animate: "fade-right",
                   description:
                         "IFA Kiko was co-created with input from traditional priests, lineage heads, and spiritual leaders—not just tech experts. Every *verse*, feature, and function is spiritually validated before implementation.",
             },
             {
                   title: "🧠 A LIVING, EVOLVING LIBRARY",
+                  animate: "fade-left",
                   description:
                         "IFA Kiko is not a static archive or data bank—it’s a sacred living space that grows through spiritual contribution. New verses are added by recognized priests as part of an expanding oral tradition.",
             },
             {
                   title: "🌿 LINEAGE IS IDENTITY",
+                  animate: "fade-down",
                   description:
                         "In Ifa tradition, the source of a verse is just as important as the verse itself. Our platform preserves this identity by linking each piece of content to the priest, their teacher, and their ancestral root.",
             },
@@ -28,6 +31,7 @@ const Principles = () => {
                               const isCenter = index === principles.length - 1;
                               return (
                                     <div
+                                          data-aos={item.animate}
                                           key={index}
                                           className={`flex ${ isCenter
                                                 ? "justify-center"

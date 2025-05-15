@@ -1,10 +1,15 @@
+'use client';
+
 import Image from "next/image";
 import { FaDownload, FaThumbsUp, FaStar } from "react-icons/fa";
 import playstore from "../../assets/playstore.svg";
 import appstore from "../../assets/appstore.svg";
+import { useState } from "react";
 const DownloadApp = () => {
+
+
       return (
-            <section className="flex md:flex-row flex-col justify-between items-center gap-10 bg-white px-6 md:px-20 py-16 font-josefin-sans">
+            <section className="flex lg:flex-row flex-col justify-between items-center gap-10 bg-white px-6 md:px-20 py-16 font-josefin-sans">
                   <div className="max-w-xl">
                         <h2 className="mb-4 font-semibold text-[30px] text-primary leading-snug"
                         >
@@ -76,15 +81,26 @@ const DownloadApp = () => {
                               </div>
                         </div>
                   </div>
+                  <div className="hidden lg:block">
 
-                  <div className="relative flex justify-center items-end w-full max-w-md">
-                        <div className="bottom-0 absolute bg-[#5B391F] rounded-full w-48 h-10"></div>
-                        <div className="relative flex items-end gap-4">
-                              <div className="bg-secondary-100 shadow-lg rounded-[40px] w-24 h-56 rotate-[-10deg]"></div>
-                              <div className="bg-secondary-100 shadow-lg rounded-[40px] w-28 h-72"></div>
-                              <div className="bg-secondary-100 shadow-lg rounded-[40px] w-24 h-56 rotate-[10deg]"></div>
+                        <div className="relative flex justify-center items-end w-full max-w-md">
+                              <div className="-bottom-3 absolute bg-[#5B391F] rounded-full w-64 h-10"></div>
+                              <div className="relative flex items-end">
+                                    <div
+                                          data-aos="zoom-in"
+                                          data-aos-delay="300"
+                                          className="z-10 bg-secondary-100 shadow-lg rounded-[40px] w-40 h-[20rem] rotate-[-10deg]"></div>
+                                    <div
+                                          data-aos="zoom-in"
+                                          className="z-20 bg-secondary-100 shadow-lg mb-4 rounded-[40px] w-40 h-[20rem]"></div>
+                                    <div
+                                          data-aos="zoom-in"
+                                          data-aos-delay="300"
+                                          className="z-10 bg-secondary-100 shadow-lg rounded-[40px] w-40 h-[20rem] rotate-[10deg]"></div>
+                              </div>
                         </div>
                   </div>
+
             </section>
       );
 };

@@ -2,6 +2,8 @@ import {
   poppins, spaceGrotesk, notoSans, lato, josefinSans,
 } from "./font";
 import "./globals.css";
+import 'aos/dist/aos.css';
+
 // import { Poppins, Space_Grotesk, Noto_Sans, Lato, Josefin_Sans } from 'next/font/google';
 
 // const poppins = Poppins({
@@ -44,6 +46,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body

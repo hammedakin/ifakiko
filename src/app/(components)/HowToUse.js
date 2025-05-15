@@ -10,18 +10,25 @@ const HowToUse = () => {
             <section className="bg-primary py-20 text-white">
                   <div className="margins">
 
-                        <div className="mb-12 font-josefin-sans text-center">
+                        <div
+                              data-aos="zoom-in"
+                              className="mb-12 font-josefin-sans text-center">
                               <h2 className="font-bold text-2xl md:text-3xl">HOW TO USE THE APP PERFECTLY</h2>
                               <p className="mx-auto mt-6 max-w-xl font-normal text-white text-sm md:text-base">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.
                               </p>
                         </div>
 
-                        <div className="flex md:flex-row flex-col justify-between items-center gap-10 font-poppins">
+                        <div
+
+                              className="flex md:flex-row flex-col justify-around items-center gap-10 md:bg-[url('/spiral.svg')] md:bg-contain md:bg-no-repeat md:bg-top font-poppins">
                               {/* Step 1 */}
-                              <div className="flex flex-col justify-between items-center w-2/3 h-full md:h-98 text-center">
+                              <div
+                                    className="flex flex-col justify-between items-center md:items-start w-2/3 h-full md:h-98 text-center">
                                     <div className="relative mb-8 h-48">
-                                          <div className="w-48">
+                                          <div
+                                                data-aos="flip-right"
+                                                className="w-48">
                                                 <Image
                                                       src={account}
                                                       alt="Account"
@@ -30,7 +37,10 @@ const HowToUse = () => {
                                                       className='w-full object-cover'
                                                 />
                                           </div>
-                                          <div className="w-48">
+                                          <div
+                                                data-aos="flip-right"
+                                                data-aos-delay="400"
+                                                className="w-48">
                                                 <Image
                                                       src={account1}
                                                       alt="Account"
@@ -40,8 +50,13 @@ const HowToUse = () => {
                                                 />
                                           </div>
                                     </div>
-                                    <h3 className="mb-2 font-medium text-2xl">Create Account</h3>
-                                    <p className="w-full md:w-2/3 font-normal text-white text-sm">
+                                    <h3
+                                          data-aos="zoom-in-right"
+                                          className="mb-2 font-medium text-2xl">Create Account</h3>
+                                    <p
+                                          data-aos="zoom-in"
+                                          data-aos-delay="300"
+                                          className="w-full md:w-2/3 font-normal text-white text-sm">
                                           Enter your information ensure your details safe and more secure
                                     </p>
                               </div>
@@ -49,7 +64,9 @@ const HowToUse = () => {
                               {/* Step 2 */}
                               <div className="flex flex-col justify-between items-center w-2/3 h-full md:h-98 text-center">
                                     <div className="relative mb-6">
-                                          <div className="w-48 h-48">
+                                          <div
+                                                data-aos="flip-right"
+                                                className="w-48 h-48">
                                                 <Image
                                                       src={info}
                                                       alt="Info"
@@ -59,15 +76,22 @@ const HowToUse = () => {
                                                 />
                                           </div>
                                     </div>
-                                    <h3 className="mb-2 font-medium text-2xl">Enter Information</h3>
-                                    <p className="w-full md:w-2/3 font-normal text-white text-sm">
+                                    <h3
+                                          data-aos="zoom-in"
+                                          className="mb-2 font-medium text-2xl">Enter Information</h3>
+                                    <p
+                                          data-aos="zoom-in"
+                                          data-aos-delay="300"
+                                          className="w-full md:w-2/3 font-normal text-white text-sm">
                                           Sending money faster & easier with end to end encryption.
                                     </p>
                               </div>
 
                               {/* Step 3 */}
-                              <div className="flex flex-col justify-between items-center w-2/3 h-full md:h-98 text-center">
-                                    <div className="relative mb-6 w-48 h-48">
+                              <div className="flex flex-col justify-between items-center md:items-end w-2/3 h-full md:h-98 text-center">
+                                    <div
+                                          data-aos="flip-right"
+                                          className="relative mb-6 w-48 h-48">
                                           <Image
                                                 src={payment}
                                                 alt="Payment"
@@ -75,7 +99,9 @@ const HowToUse = () => {
                                                 height={100}
                                                 className='w-48 h-48 object-contain'
                                           />
-                                          <div className="top-1/2 -left-1 absolute">
+                                          <div
+                                                data-aos="zoom-in-right"
+                                                className="top-1/2 -left-1 absolute">
                                                 <Image
                                                       src={payment1}
                                                       alt="Payment"
@@ -85,8 +111,13 @@ const HowToUse = () => {
                                                 />
                                           </div>
                                     </div>
-                                    <h3 className="mb-2 font-medium text-2xl">Add Payment</h3>
-                                    <p className="w-full md:w-2/3 font-normal text-white text-sm">
+                                    <h3
+                                          data-aos="zoom-in"
+                                          className="mb-2 font-medium text-2xl">Add Payment</h3>
+                                    <p
+                                          data-aos="zoom-in"
+                                          data-aos-delay="300"
+                                          className="w-full md:w-2/3 font-normal text-white text-sm">
                                           Add multiple cards and track your daily expense with quality interface
                                     </p>
                               </div>
