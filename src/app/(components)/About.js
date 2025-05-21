@@ -32,8 +32,6 @@ const About = () => {
                         >
                               EXPLORE MORE
                         </button>
-
-
                   </div>
 
                   <div className="relative">
@@ -55,15 +53,7 @@ const About = () => {
                                     height={100}
                                     className='z-0 w-full object-cover'
                               />
-                              <div className="bottom-0 left-0 absolute w-25 sm:w-40 md:w-28 lg:w-48 h-25 sm:h-40 md:h-28 lg:h-48">
-                                    <Image
-                                          src={opele}
-                                          alt="Opele Ifa"
-                                          width={150}
-                                          height={150}
-                                          className='w-full object-cover'
-                                    />
-                              </div>
+
                               <div className="right-10 -bottom-10 absolute mr-4 mb-4">
                                     <div className="bg-lime-600 shadow-lg px-4 py-2 rounded-xl font-josefin-sans font-normal text-white text-center">
                                           <p className="text-3xl md:text-3xl lg:text-6xl">

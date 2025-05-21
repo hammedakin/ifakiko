@@ -32,10 +32,17 @@
   --font-josefin-sans: var(--font-josefin-sans);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
+    --secondary: #74B117;
+    --secondary-100: #5CD425;
+    --secondary-200: #B9FF66;
+    --primary: #251804;
+    --dark: #333333;
+    --dark-100: #232233;
+    --dark-200: #6C6C72;
   }
 }
 
