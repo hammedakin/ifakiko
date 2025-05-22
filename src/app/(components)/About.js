@@ -1,8 +1,8 @@
 import oponifa from "../../assets/oponifa.svg";
-import opele from "../../assets/opele.svg";
 import ereifa from "../../assets/ereifa.svg";
 import Image from "next/image";
 import Typewriter from 'typewriter-effect';
+import Principles from "./Principles";
 
 const About = () => {
       return (
@@ -18,15 +18,17 @@ const About = () => {
                               />
                         </div>
                         <div className="mb-6 font-josefin-sans font-normal text-primary leading-relaxed">
-                              <Typewriter
+                              {/* <Typewriter
                                     options={{
-                                          strings: ['IFA Kiko is a sacred digital space created to preserve and teach the oral traditions of Ifa and Orisa in an ethical, secure, and lineage-respectful manner. Rooted in Yoruba spirituality and guided by revered elders, the platform is not just an app–it is a spiritual mission.'],
+                                          strings: [''],
                                           autoStart: true,
                                           loop: true,
 
                                     }}
-                              />
+                              /> */}
+                              IFA Kiko is a sacred digital space created to preserve and teach the oral traditions of Ifa and Orisa in an ethical, secure, and lineage-respectful manner. Rooted in Yoruba spirituality and guided by revered elders, the platform is not just an app–it is a spiritual mission.
                         </div>
+                        <Principles />
                         <button className="bg-secondary hover:bg-lime-700 shadow-2xl py-3 pr-10 pl-6 rounded-xl rounded-tr-2xl font-semibold text-white leading-7 tracking-widest transition duration-300"
                               style={{ clipPath: 'polygon(0 0, 100% 0, 85% 100%, 0% 100%)' }}
                         >

@@ -16,7 +16,7 @@ export default function Home() {
       <HeroSection />
       <HeroList />
       <About />
-      <Principles />
+      {/* <Principles /> */}
       <Features />
       <JoinAsPriest />
       <HowToUse />

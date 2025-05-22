@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { FaChevronDown, FaGlobeAmericas } from "react-icons/fa";
+import LanguageSwitcher from '../../components/LanguageSwitcher';
 
 const Navbar = () => {
 
@@ -22,53 +23,55 @@ const Navbar = () => {
       return (
             <>
                   {/* Navigation */}
-                  <header className="flex justify-between items-center mx-auto px-4 py-6 pt-14 font-lato margins">
-                        <div className="">
-                              <Link href="/">
-                                    <Image
-                                          src={logo}
-                                          alt="Ifa Kiko Logo"
-                                          width={100}
-                                          height={100}
-                                          className='object-cover'
-                                    />
-                              </Link>
-                        </div>
+                  <header className="margins">
+                        <div className="flex justify-between items-center px-4 py-6 pt-14 font-lato">
 
-                        {/* Desktop Navigation */}
-                        <nav className="hidden md:flex items-center gap-8 text-xl">
-                              {
-                                    navLink.map(({ label, href }, i) =>
-                                          <a
-                                                key={i}
-                                                href={href} className="font-medium text-dark hover:text-secondary text-sm">
-                                                {label}
-                                          </a>
-                                    )
-                              }
-                        </nav>
+                              <div className="">
+                                    <Link href="/">
+                                          <Image
+                                                src={logo}
+                                                alt="Ifa Kiko Logo"
+                                                width={100}
+                                                height={100}
+                                                className='object-cover'
+                                          />
+                                    </Link>
+                              </div>
 
-                        {/* Desktop CTA Button */}
-                        <div className="hidden md:block">
-                              <div className="flex gap-5">
+                              {/* Desktop Navigation */}
+                              <nav className="hidden md:flex items-center gap-8 text-xl">
+                                    {
+                                          navLink.map(({ label, href }, i) =>
+                                                <a
+                                                      key={i}
+                                                      href={href} className="font-medium text-dark hover:text-secondary text-sm">
+                                                      {label}
+                                                </a>
+                                          )
+                                    }
+                              </nav>
 
-                                    <button
-                                          className="bg-white px-8 py-2 font-bold text-dark text-sm"
-                                    >
-                                          Login
-                                    </button>
-                                    <button
-                                          className="bg-white px-8 py-2 rounded-xl font-bold text-secondary text-sm"
-                                          style={{
-                                                border: '2px solid',
-                                                borderImageSource: 'linear-gradient(135deg, #74B117 13.54%, #333333 100%)',
-                                                borderImageSlice: 1,
-                                                borderRadius: '12px !important',
-                                          }}
-                                    >
-                                          Sign up
-                                    </button>
-                                    <button
+                              {/* Desktop CTA Button */}
+                              <div className="hidden md:block">
+                                    <div className="flex gap-5">
+
+                                          <button
+                                                className="bg-white px-8 py-2 font-bold text-dark text-sm"
+                                          >
+                                                Login
+                                          </button>
+                                          <button
+                                                className="bg-white px-8 py-2 rounded-xl font-bold text-secondary text-sm"
+                                                style={{
+                                                      border: '2px solid',
+                                                      borderImageSource: 'linear-gradient(135deg, #74B117 13.54%, #333333 100%)',
+                                                      borderImageSlice: 1,
+                                                      borderRadius: '12px !important',
+                                                }}
+                                          >
+                                                Sign up
+                                          </button>
+                                          {/* <button
                                           className="flex items-center gap-2 bg-white px-3 py-2 rounded-xl font-bold text-secondary text-sm"
                                           style={{
                                                 border: '2px solid',
@@ -78,16 +81,20 @@ const Navbar = () => {
                                           }}
                                     >
                                           <FaGlobeAmericas /> En <FaChevronDown />
-                                    </button>
+                                    </button> */}
+                                          <LanguageSwitcher />
+
+                                    </div>
+
                               </div>
 
+
+                              {/* Mobile Menu Button */}
+                              <button className="md:hidden text-secondary" onClick={toggleMenu} aria-label="Toggle menu">
+                                    <Menu size={35} />
+                              </button>
                         </div>
 
-
-                        {/* Mobile Menu Button */}
-                        <button className="md:hidden text-secondary" onClick={toggleMenu} aria-label="Toggle menu">
-                              <Menu size={35} />
-                        </button>
                   </header>
 
                   {/* Mobile Menu */}
@@ -141,17 +148,7 @@ const Navbar = () => {
                                                 >
                                                       Sign up
                                                 </button>
-                                                <button
-                                                      className="flex items-center gap-2 bg-white px-3 py-2 rounded-xl font-bold text-secondary text-sm"
-                                                      style={{
-                                                            border: '2px solid',
-                                                            borderImageSource: 'linear-gradient(135deg, #74B117 13.54%, #333333 100%)',
-                                                            borderImageSlice: 1,
-                                                            borderRadius: '12px !important',
-                                                      }}
-                                                >
-                                                      <FaGlobeAmericas /> En <FaChevronDown />
-                                                </button>
+                                                <LanguageSwitcher />
                                           </div>
 
                                     </div>

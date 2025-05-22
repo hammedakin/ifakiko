@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaDownload, FaThumbsUp, FaStar } from "react-icons/fa";
 import playstore from "../../assets/playstore.svg";
 import appstore from "../../assets/appstore.svg";
+import mobile3 from "../../assets/mobile3.svg";
 import { useState } from "react";
 const DownloadApp = () => {
 
@@ -89,7 +90,15 @@ const DownloadApp = () => {
                                     <div
                                           data-aos="zoom-in"
                                           data-aos-delay="300"
-                                          className="z-10 bg-secondary-100 shadow-lg rounded-[40px] w-40 h-[20rem] rotate-[-10deg]"></div>
+                                          className="z-10 bg-secondary-100 shadow-lg rounded-[40px] w-40 h-[20rem] rotate-[-10deg]">
+                                          {/* <Image
+                                                src={mobile3}
+                                                alt="Playstore"
+                                                width={100}
+                                                height={100}
+                                                className='object-cover'
+                                          /> */}
+                                    </div>
                                     <div
                                           data-aos="zoom-in"
                                           className="z-20 bg-secondary-100 shadow-lg mb-4 rounded-[40px] w-40 h-[20rem]"></div>

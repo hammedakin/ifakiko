@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaHeadphones, FaMicrophone, FaStore, FaSitemap, FaUser, FaBook } from "react-icons/fa";
+import mobile2 from "../../assets/mobile2.svg";
+import Image from 'next/image';
 
 const Features = () => {
       return (
@@ -55,7 +57,15 @@ const Features = () => {
                                           data-aos-easing="ease-out-cubic"
                                           data-aos-duration="1000"
                                           className="flex justify-center items-center">
-                                          <div className="bg-secondary-100 rounded-3xl w-44 md:w-48 h-96 md:h-[540px] lg:h-[450px]"></div>
+                                          <div className="bg-secondary-10 rounded-3xl w-44 md:w-fit h-96 md:h-fit lg:h-[450px]">
+                                                <Image
+                                                      src={mobile2}
+                                                      alt="Opon Ifa"
+                                                      width={100}
+                                                      height={100}
+                                                      className='w-full h-96 md:h-[500px] lg:h-[450px] object-cover'
+                                                />
+                                          </div>
                                     </div>
 
                               </div>
