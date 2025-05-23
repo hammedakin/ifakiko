@@ -22,6 +22,7 @@ export default function Home() {
       <HowToUse />
       <DownloadApp />
       <WorkingProcess />
+      <HeroList />
       <Footer />
     </main>
   );

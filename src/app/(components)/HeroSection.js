@@ -2,9 +2,13 @@ import Image from 'next/image';
 import playstore from "../../assets/playstore.svg";
 import appstore from "../../assets/appstore.svg";
 import logo from "../../assets/logo.svg";
+import mobile1 from "../../assets/mobile1.svg";
 import Typewriter from 'typewriter-effect';
+import useTranslation from 'next-translate/useTranslation';
 
 const HeroSection = () => {
+      const { t } = useTranslation('common');
+
       return (
 
             <section className="flex justify-center items-center bg-white mt-10 md:mt-0 px-4 min-h-screen font-josefin-sans margins">
@@ -40,7 +44,7 @@ const HeroSection = () => {
                                                 WebkitTextStroke: '0.5px var(--color-secondary)'
                                           }}
                                     >
-                                          DOWNLOAD APP NOW
+                                          {t('DOWNLOAD APP NOW')}
                                     </h2>
                                     <p className="font-bold text-lime-900"></p>
                                     <div className="flex gap-3">
@@ -64,7 +68,45 @@ const HeroSection = () => {
                         </div>
 
                         {/* Right Side - Ifá Kíkọ Box */}
-                        <div className="relative flex justify-center items-center my-32 md:my-0 w-full h-full">
+                        <div className="flex justify-center items-center gap-3">
+                              <div className="bg-secondary px-8 py-20"
+                                    style={{
+                                          borderTopLeftRadius: '150px',
+                                          borderBottomLeftRadius: '150px',
+                                          borderTopRightRadius: '150px',
+                                          borderBottomRightRadius: '150px',
+                                    }}
+                              >
+                                    <Image
+                                          src={mobile1}
+                                          alt="Mobile"
+                                          width={100}
+                                          height={100}
+                                          className='w-full object-cover'
+                                    />
+                              </div>
+                              <div className="flex justify-center items-center bg-primary rounded-xl w-25"
+                                    style={{
+                                          borderTopLeftRadius: '150px',
+                                          borderBottomLeftRadius: '150px',
+                                          borderTopRightRadius: '150px',
+                                          borderBottomRightRadius: '150px',
+                                          height: '35rem'
+                                    }}
+                              >
+                                    <Image
+                                          // data-aos="zoom-in-left"
+                                          // data-aos-delay="700"
+                                          src={logo}
+                                          alt="Playstore"
+                                          width={100}
+                                          height={100}
+                                          className='object-cover'
+                                          style={{ rotate: '90deg', width: '150px' }}
+                                    />
+                              </div>
+                        </div>
+                        {/* <div className="relative flex justify-center items-center my-32 md:my-0 w-full h-full">
                               <div
                                     data-aos="flip-right"
                                     data-aos-delay="600"
@@ -86,7 +128,7 @@ const HeroSection = () => {
                                           className='object-cover'
                                     />
                               </div>
-                        </div>
+                        </div> */}
                   </div>
             </section >
       );

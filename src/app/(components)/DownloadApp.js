@@ -4,13 +4,17 @@ import Image from "next/image";
 import { FaDownload, FaThumbsUp, FaStar } from "react-icons/fa";
 import playstore from "../../assets/playstore.svg";
 import appstore from "../../assets/appstore.svg";
-import mobile3 from "../../assets/mobile3.svg";
-import { useState } from "react";
+import mobile3 from "../../assets/mobile3.png";
+import mobile4 from "../../assets/mobile4.svg";
+import mobile5 from "../../assets/mobile5.png";
+import oval from "../../assets/oval.svg";
+
+
 const DownloadApp = () => {
 
 
       return (
-            <section className="flex lg:flex-row flex-col justify-between items-center gap-10 bg-white px-6 md:px-20 py-16 font-josefin-sans">
+            <section className="flex lg:flex-row flex-col justify-between items-center gap-10 bg-white py-16 font-josefin-sans margins">
                   <div className="max-w-xl">
                         <h2 className="mb-4 font-semibold text-[30px] text-primary leading-snug"
                         >
@@ -31,7 +35,7 @@ const DownloadApp = () => {
                                     />
                                     <Image
                                           src={appstore}
-                                          alt="Playstore"
+                                          alt="Appstore"
                                           width={100}
                                           height={100}
                                           className='object-cover'
@@ -85,27 +89,62 @@ const DownloadApp = () => {
                   <div className="hidden lg:block">
 
                         <div className="relative flex justify-center items-end w-full max-w-md">
-                              <div className="-bottom-3 absolute bg-[#5B391F] rounded-full w-64 h-10"></div>
-                              <div className="relative flex items-end">
+
+                              <div className="relative flex items-end px-8 py-10"
+                                    style={{
+                                          backgroundColor: '#74B11780',
+                                          borderRadius: '20px'
+                                    }}
+                              >
                                     <div
                                           data-aos="zoom-in"
                                           data-aos-delay="300"
                                           className="z-10 bg-secondary-100 shadow-lg rounded-[40px] w-40 h-[20rem] rotate-[-10deg]">
-                                          {/* <Image
+                                          <Image
                                                 src={mobile3}
-                                                alt="Playstore"
+                                                alt="Mobile"
                                                 width={100}
                                                 height={100}
-                                                className='object-cover'
-                                          /> */}
+                                                className='rounded-xl w-full object-cover'
+                                          />
                                     </div>
                                     <div
                                           data-aos="zoom-in"
-                                          className="z-20 bg-secondary-100 shadow-lg mb-4 rounded-[40px] w-40 h-[20rem]"></div>
+                                          className="z-20 bg-secondary-100 shadow-lg mb-4 rounded-[40px] w-40 h-[20rem]">
+                                          <Image
+                                                src={mobile4}
+                                                alt="Mobile"
+                                                width={100}
+                                                height={100}
+                                                className='rounded-xl w-full object-cover'
+                                          />
+                                    </div>
                                     <div
                                           data-aos="zoom-in"
                                           data-aos-delay="300"
-                                          className="z-10 bg-secondary-100 shadow-lg rounded-[40px] w-40 h-[20rem] rotate-[10deg]"></div>
+                                          className="z-10 bg-secondary-100 shadow-lg rounded-[40px] w-40 h-[20rem] rotate-[10deg]">
+                                          <Image
+                                                src={mobile5}
+                                                alt="Mobile"
+                                                width={100}
+                                                height={100}
+                                                className='rounded-xl w-full object-cover'
+                                          />
+                                    </div>
+                              </div>
+                              <div className="-left-10 z-40 absolute rounded-full w-64 h-10"
+                                    style={{
+                                          bottom: '10px'
+                                    }}
+                              >
+
+                                    <Image
+                                          src={oval}
+                                          alt="Oval"
+                                          width={100}
+                                          height={100}
+                                          className='w-full object-cover'
+                                    />
                               </div>
                         </div>
                   </div>

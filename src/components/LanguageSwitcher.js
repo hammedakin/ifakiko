@@ -5,12 +5,20 @@ import { FaChevronDown, FaGlobeAmericas } from "react-icons/fa";
 export default function LanguageSwitcher() {
       const router = useRouter();
       const pathname = usePathname();
-      const currentLang = pathname.split('/')[1];
+      // const currentLang = pathname.split('/')[1];
+
+      // const handleChange = (e) => {
+      // const lang = e.target.value;
+      // const newPath = '/' + lang + pathname.slice(3);
+      // router.push(newPath);
+      // };
 
       const handleChange = (e) => {
-            // const lang = e.target.value;
-            // const newPath = '/' + lang + pathname.slice(3);
-            // router.push(newPath);
+            const locale = e.target.value;
+            const segments = pathname.split('/');
+            segments[1] = locale; // replace locale segment
+            const newPath = segments.join('/');
+            router.push(newPath);
       };
 
       return (
@@ -24,8 +32,7 @@ export default function LanguageSwitcher() {
                               borderRadius: '12px !important',
                         }}
                         onChange={handleChange}
-                        value={currentLang}
-
+                        defaultValue={''}
                   >
                         <option value="en">English</option>
                         <option value="es">Español</option>

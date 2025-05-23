@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const HeroList = () => {
 
@@ -14,61 +14,93 @@ const HeroList = () => {
             { text: "The Lineages of Ifá: Ègbá, Ìjẹ̀bú, Òyó, Ìfẹ̀", color: "bg-[#F2994A]", top: "top-32", left: "left-[600px]" },
       ];
 
+
       return (
-            <section className="py-16 font-lato text-[#0D173B] text-xl text-center margins" id='verses'>
-                  <div className="hidden lg:block">
+            <section className="py-16 overflow-scroll font-lato text-[#0D173B] text-xl text-center" id='verses'>
+                  <div className="">
 
                         <div className="flex">
-                              <div
-                                    data-aos="flip-right"
-                                    className="relative flex flex-col h-68">
-
-                                    {tagLeft.map((tag, index) => (
-                                          <div
-                                                key={index}
-                                                className={`absolute ${ tag.top } ${ tag.left } ${ tag.color } w-fit text-nowrap px-4 py-2 rounded-full font-normal shadow-md`}
-                                          >
-                                                {tag.text}
-                                          </div>
-                                    ))}
-                              </div>
-                              <div
-                                    data-aos="fade-left"
-                                    data-aos-delay='500'
-                                    className="relative flex flex-col h-68">
-
-                                    {tagRight.map((tag, index) => (
-                                          <div
-                                                key={index}
-                                                className={`absolute ${ tag.top } ${ tag.left } ${ tag.color } w-fit text-nowrap px-4 py-2 rounded-full font-medium shadow-md`}
-                                          >
-                                                {tag.text}
-                                          </div>
-                                    ))}
-                              </div>
-                        </div>
-                  </div>
-
-
-                  <div className="lg:hidden block">
-                        <div
-                              className="flex flex-col items-center gap-6 w-full">
-                              {[...tagLeft, ...tagRight]?.map((tag, index) => (
+                              <marquee behavior="smooth" direction="left" scrollamount="10">
                                     <div
-                                          key={index}
-                                          className={`${ tag.color } w-fit text-nowrap px-4 py-2 rounded-full font-medium shadow-md`}
-                                          style={{
-                                                fontSize: 'clamp(14px, 3vw, 20px)',
-                                          }}
-                                    >
-                                          {tag.text}
+                                          className="flex gap-10">
+                                          {Array.from({ length: 30 }).map((_, index) => (
+                                                <Fragment key={index}>
+                                                      {[...tagLeft, ...tagRight].map((tag, index) =>
+                                                            <div
+                                                                  key={index}
+                                                                  className={`${ tag.color } w-fit text-nowrap px-4 py-2 rounded-full font-normal shadow-md`}
+                                                            >
+                                                                  {tag.text}
+                                                            </div>
+                                                      )}
+                                                </Fragment>
+                                          )
+                                          )}
                                     </div>
-                              ))}
+                              </marquee>
+
                         </div>
                   </div>
 
             </section>
       );
+
+
+      // return (
+      //       <section className="py-16 font-lato text-[#0D173B] text-xl text-center margins" id='verses'>
+      //             <div className="hidden lg:block">
+
+      //                   <div className="flex">
+      //                         <div
+      //                               data-aos="flip-right"
+      //                               className="relative flex flex-col h-68">
+
+      //                               {tagLeft.map((tag, index) => (
+      //                                     <div
+      //                                           key={index}
+      //                                           className={`absolute ${ tag.top } ${ tag.left } ${ tag.color } w-fit text-nowrap px-4 py-2 rounded-full font-normal shadow-md`}
+      //                                     >
+      //                                           {tag.text}
+      //                                     </div>
+      //                               ))}
+      //                         </div>
+      //                         <div
+      //                               data-aos="fade-left"
+      //                               data-aos-delay='500'
+      //                               className="relative flex flex-col h-68">
+
+      //                               {tagRight.map((tag, index) => (
+      //                                     <div
+      //                                           key={index}
+      //                                           className={`absolute ${ tag.top } ${ tag.left } ${ tag.color } w-fit text-nowrap px-4 py-2 rounded-full font-medium shadow-md`}
+      //                                     >
+      //                                           {tag.text}
+      //                                     </div>
+      //                               ))}
+      //                         </div>
+      //                   </div>
+      //             </div>
+
+
+      //             <div className="lg:hidden block">
+      //                   <div
+      //                         className="flex flex-col items-center gap-6 w-full">
+      //                         {[...tagLeft, ...tagRight]?.map((tag, index) => (
+      //                               <div
+      //                                     key={index}
+      //                                     className={`${ tag.color } w-fit text-nowrap px-4 py-2 rounded-full font-medium shadow-md`}
+      //                                     style={{
+      //                                           fontSize: 'clamp(14px, 3vw, 20px)',
+      //                                     }}
+      //                               >
+      //                                     {tag.text}
+      //                               </div>
+      //                         ))}
+      //                   </div>
+      //             </div>
+
+      //       </section>
+      // );
 };
 
 export default HeroList;
