@@ -16,7 +16,7 @@ const HeroList = () => {
 
 
       return (
-            <section className="py-16 overflow-scroll font-lato text-[#0D173B] text-xl text-center" id='verses'>
+            <section className="py-16 font-lato text-[#0D173B] text-xl text-center" id='verses'>
                   <div className="">
 
                         <div className="flex">
