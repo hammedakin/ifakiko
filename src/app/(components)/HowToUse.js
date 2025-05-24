@@ -2,7 +2,7 @@ import Image from "next/image";
 import account from "../../assets/account.png";
 import account1 from "../../assets/account1.png";
 import info from "../../assets/info.png";
-import payment from "../../assets/payment.png";
+import payment from "../../assets/payment.svg";
 import payment1 from "../../assets/payment1.png";
 
 const HowToUse = () => {
@@ -57,7 +57,7 @@ const HowToUse = () => {
                                           data-aos="zoom-in"
                                           data-aos-delay="300"
                                           className="w-full md:w-2/3 font-normal text-white text-sm">
-                                          Enter your information ensure your details safe and more secure
+                                          Enter your information, verify and login successfully.
                                     </p>
                               </div>
 
@@ -78,12 +78,12 @@ const HowToUse = () => {
                                     </div>
                                     <h3
                                           data-aos="zoom-in"
-                                          className="mb-2 font-medium text-2xl">Enter Information</h3>
+                                          className="mb-2 font-medium text-2xl">Follow your Preferred Priest</h3>
                                     <p
                                           data-aos="zoom-in"
                                           data-aos-delay="300"
                                           className="w-full md:w-2/3 font-normal text-white text-sm">
-                                          Sending money faster & easier with end to end encryption.
+                                          Get to follow your preferred priest, see their temple and location.
                                     </p>
                               </div>
 
@@ -113,12 +113,12 @@ const HowToUse = () => {
                                     </div>
                                     <h3
                                           data-aos="zoom-in"
-                                          className="mb-2 font-medium text-2xl">Add Payment</h3>
+                                          className="mb-2 font-medium text-2xl">Listen to Ifa Verse </h3>
                                     <p
                                           data-aos="zoom-in"
                                           data-aos-delay="300"
                                           className="w-full md:w-2/3 font-normal text-white text-sm">
-                                          Add multiple cards and track your daily expense with quality interface
+                                          Get ready to listen to your ifa verse both on audio and lyrics.
                                     </p>
                               </div>
                         </div>

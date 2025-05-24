@@ -132,7 +132,7 @@ const DownloadApp = () => {
                                           />
                                     </div>
                               </div>
-                              <div className="-left-10 z-40 absolute rounded-full w-64 h-10"
+                              {/* <div className="-left- z-40 absolute rounded-full w-64 h-10"
                                     style={{
                                           bottom: '10px'
                                     }}
@@ -145,7 +145,7 @@ const DownloadApp = () => {
                                           height={100}
                                           className='w-full object-cover'
                                     />
-                              </div>
+                              </div> */}
                         </div>
                   </div>
 

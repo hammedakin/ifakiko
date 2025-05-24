@@ -33,7 +33,7 @@ const HeroSection = () => {
                                           />
 
                                     </h2>
-                                    <p className="mb-4 font-medium text-dark-200 text-base leading-6">
+                                    <p className="mb-4 font-medium text-dark-200 text-sm leading-6">
                                           Available on iOS and Android<br />
                                           Free to join, pay-per-verse model.<br />
                                           Built for the spiritually curious, the committed learner, and the global Yoruba community
@@ -70,6 +70,7 @@ const HeroSection = () => {
                         {/* Right Side - Ifá Kíkọ Box */}
                         <div className="flex justify-center items-center gap-3">
                               <div className="bg-secondary px-8 py-20"
+                                    data-aos="zoom-in"
                                     style={{
                                           borderTopLeftRadius: '150px',
                                           borderBottomLeftRadius: '150px',
@@ -78,6 +79,8 @@ const HeroSection = () => {
                                     }}
                               >
                                     <Image
+                                          data-aos="flip-right"
+                                          data-aos-delay="500"
                                           src={mobile1}
                                           alt="Mobile"
                                           width={100}
@@ -86,6 +89,8 @@ const HeroSection = () => {
                                     />
                               </div>
                               <div className="flex justify-center items-center bg-primary rounded-xl w-25"
+                                    data-aos="fade-up"
+                                    data-aos-delay="800"
                                     style={{
                                           borderTopLeftRadius: '150px',
                                           borderBottomLeftRadius: '150px',
